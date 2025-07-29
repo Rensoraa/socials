@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Socials</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://p100library.com/favicon.ico" />
+</head>
+<body>
+  <header>
+      <div class="top-banner">
+  <img src="https://p100library.com/favicon.ico" alt="P100 Library" />
+</div>
+
+    <h1>My Socials</h1>
+    <p class="highlight">Come find me where I’m most active</p>
+  </header>
+  <button id="back-button" onclick="goBack()">← Back to Main Site</button>
+
+
+  <section class="gallery">
+    <div class="screenshot">
+      <a href="https://steamcommunity.com/id/rensora/" target="_blank">
+        <img src="https://cdn.simpleicons.org/steam/ffffff" alt="Steam" />
+        <p>Steam Profile</p>
+      </a>
+      <div class="social-info">
+        <p>Add me on Steam to check out my games, achievements, and recent activity.</p>
+      </div>
+    </div>
+
+    <div class="screenshot" onclick="copyDiscord()">
+      <img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord" />
+      <p>Discord</p>
+      <div class="social-info">
+        <p>Got any questions, want to chat? Or something completely different?<br>
+        Click to copy: <span class="highlight">rensora._.</span></p>
+      </div>
+    </div>
+
+    <div class="screenshot">
+      <a href="https://x.com/Rensora__" target="_blank">
+        <img src="https://cdn.simpleicons.org/x/ffffff" alt="X / Twitter" />
+        <p>Formally known as Twitter</p>
+      </a>
+      <div class="social-info">
+        <p>I post updates, thoughts, memes, and occasional announcements.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Last updated: July 2025 &mdash; All links are active.
+  </footer>
+
+  <script>
+    function copyDiscord() {
+      const username = "rensora._.";
+      navigator.clipboard.writeText(username).then(() => {
+        alert(`Copied Discord username: ${username}`);
+      }).catch(() => {
+        alert("Failed to copy username.");
+      });
+    }
+    function goBack() {
+  window.location.href = 'https://rensoraa.github.io/p100/'; 
+}
+
+  </script>
+</body>
+</html>
